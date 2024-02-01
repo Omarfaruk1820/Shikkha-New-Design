@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard one</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class=" grid grid-cols-5">
+    <div class="col-span-1 border">
+<h1>hello bangladesh</h1>
+<hr/>
+</div>
+    <div class="col-span-4  border bg-gray-50 mx-1">
+        <div>
+            <div class="flex justify-between">
+                <h1 class="text-3xl font-bold">Overview</h1>
+                
+                <div class="flex gap-2">
+                    <label class="cursor-pointer label">
+                        <input type="checkbox" class="toggle toggle-primary "checked />
+                    </label>
+                   <div class="avatar ml-2">
+                        <div class="w-10 rounded-full">
+                          <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <h1 class="font-bold mt-2">Administrator</h1>
+                     
+                      <div class="dropdown dropdown-end mt-3 ml-1">
+                        <div tabindex="0" role="button">
+                            <i class="fa-solid fa-circle-chevron-down"></i>
+                        </div>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Item 1</a></li>
+                          <li><a>Item 2</a></li>
+                        </ul>
+                      </div>
+                      </div>
+                      <div class="indicator ml-2 mt-2 mr-5">
+                        <span class="indicator-item badge badge-secondary">99+</span> 
+                        <i class="fa-regular fa-bell mt-2 text-xl"></i>
+                        
+                      </div>
+                      </div>
+                </div>
+                <hr/>
+            </div>
+
+            <!-- show card -->
+            <div class="grid grid-cols-6 mt-3">
+                <div class="col-span-4">
+                    <div class=" grid grid-cols-4 gap-3 ">
+                        <div class="card  shadow-lg shadow-purple-500/100">
+                            <div class="mt-3">
+                                <h2 class="card-title ml-5">Total Attendance</h2>
+                               <h1 class="text-center font-bold text-2xl">87</h1>
+                            
+                               <div class="flex mb-3 mt-5 ml-5">
+                                <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_164)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_164">
+                                    <rect width="23" height="23" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </h1>
+                                    <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                        </svg>
+                                        </h1>
+                                    <h1 class="font-semibold mt-1">Since last week</h1>
+                               </div>
+                            </div>
+                           </div>
+                        <div class="card  shadow-lg shadow-purple-500/100">
+                            <div class="mt-3">
+                                <h2 class="card-title ml-5">Students</h2>
+                               <h1 class="text-center font-bold text-2xl">500</h1>
+                            
+                               <div class="flex mb-3 mt-5 ml-5">
+                                <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_164)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_164">
+                                    <rect width="23" height="23" fill="white"/>
+                                    <rect width="23" height="23" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </h1>
+                                    <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                        </svg>
+                                        </h1>
+                                    <h1 class="font-semibold mt-1">Since last week</h1>
+                               </div>
+                            </div>
+                           </div>
+                        <div class="card  shadow-lg shadow-purple-500/100">
+                            <div class="mt-3">
+                                <h2 class="card-title ml-5">Teacher</h2>
+                               <h1 class="text-center font-bold text-2xl">100</h1>
+                            
+                               <div class="flex mb-3 mt-5 ml-5">
+                                <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_164)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_164">
+                                    <rect width="23" height="23" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </h1>
+                                    <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                        </svg>
+                                        </h1>
+                                    <h1 class="font-semibold mt-1">Since last week</h1>
+                               </div>
+                            </div>
+                           </div>
+                           <div class="card  shadow-lg shadow-purple-500/100">
+                            <div class="mt-3">
+                                <h2 class="card-title ml-5">SMS</h2>
+                               <h1 class="text-center font-bold text-2xl">1000</h1>
+                            
+                               <div class="flex mb-3 mt-5 ml-5">
+                                <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_164)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_164">
+                                    <rect width="23" height="23" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </h1>
+                                    <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                        </svg>
+                                        </h1>
+                                    <h1 class="font-semibold mt-1">Since last week</h1>
+                               </div>
+                            </div>
+                           </div>
+                           
+                    </div>
+                    <div class="card mt-5  shadow-lg shadow-purple-500/100">
+                        <div class="mt-3">
+                           <div class="flex justify-between">
+                            <h2 class="card-title ml-5 text-[#7A06A9]">Income VS Expense</h2>
+                            <div class="flex">
+                                <div class="flex">
+                                    <div class="badge badge-primary badge-md"></div>
+                                    <h1 class="text-primary">Income</h1>
+                                   </div>
+                                   <div class="flex ml-5 mr-5">
+                                    
+                                    <div class="badge badge-secondary badge-md"></div>
+                                    <h1 class="text-secondary">Expense</h1>
+                                   </div>
+                            </div>
+                           </div>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="ml-3">160000</h1>
+                        <h1 class="mx-16">
+                            <hr/>
+                        </h1>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="ml-3">160000</h1>
+                        <h1 class="mx-16">
+                            <hr/>
+                        </h1>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="ml-3">160000</h1>
+                        <h1 class="mx-16">
+                            <hr/>
+                        </h1>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="ml-3">160000</h1>
+                        <h1 class="mx-16">
+                            <hr/>
+                        </h1>
+                    </div>
+                    <div class="mt-3">
+                        <h1 class="ml-3">160000</h1>
+                        <h1 class="mx-16 mb-5">
+                            <hr/>
+                        </h1>
+                    </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="card  shadow-lg shadow-purple-500/100">
+                            <div class="mt-3">
+                                <h2 class="card-title ml-5">Calender</h2>
+                               <h1 class="text-center font-bold text-2xl">87</h1>
+                            
+                               <div class="flex mb-3 mt-5 ml-5">
+                                <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_164)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_5_164">
+                                    <rect width="23" height="23" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    </h1>
+                                    <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                        </svg>
+                                        </h1>
+                                    <h1 class="font-semibold mt-1">Since last week</h1>
+                               </div>
+                            </div>
+                        </div>
+                            <div class="card h-56  shadow-lg shadow-purple-500/100">
+                                <div class="mt-3">
+                                    <h2 class="card-title ml-5">Total Attendance</h2>
+                                   <h1 class="text-center font-bold text-2xl">87</h1>
+                                
+                                   <div class="flex mb-3 mt-5 ml-5">
+                                    <h1 class="mr-3 mt-2"><svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5_164)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.125H23V23H0V20.125ZM12.2188 8.625L17.9688 2.875H15.8125V0H23V7.1875H20.125V5.03125L13.6562 11.5L12.2188 12.9375L9.34375 10.0625L2.15625 17.25L0 15.0938L9.34375 5.75L11.5 7.90625L12.2188 8.625Z" fill="#30D915"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_5_164">
+                                        <rect width="23" height="23" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        </h1>
+                                        <h1 class="mr-1 mt-2"><svg width="30" height="15" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.756 3.4V0.690999H5.817V16H2.793V3.4H0.756ZM18.4654 2.917L12.8794 16H9.8974L15.5254 3.253H8.3434V0.732999H18.4654V2.917ZM19.8903 4.45C19.8903 3.386 20.1983 2.553 20.8143 1.951C21.4443 1.349 22.2493 1.048 23.2293 1.048C24.2093 1.048 25.0073 1.349 25.6233 1.951C26.2533 2.553 26.5683 3.386 26.5683 4.45C26.5683 5.528 26.2533 6.368 25.6233 6.97C25.0073 7.572 24.2093 7.873 23.2293 7.873C22.2493 7.873 21.4443 7.572 20.8143 6.97C20.1983 6.368 19.8903 5.528 19.8903 4.45ZM33.3723 1.3L25.1193 16H22.2633L30.4953 1.3H33.3723ZM23.2083 2.812C22.4383 2.812 22.0533 3.358 22.0533 4.45C22.0533 5.556 22.4383 6.109 23.2083 6.109C23.5863 6.109 23.8803 5.976 24.0903 5.71C24.3003 5.43 24.4053 5.01 24.4053 4.45C24.4053 3.358 24.0063 2.812 23.2083 2.812ZM29.1093 12.829C29.1093 11.751 29.4173 10.918 30.0333 10.33C30.6633 9.728 31.4683 9.427 32.4483 9.427C33.4283 9.427 34.2193 9.728 34.8213 10.33C35.4373 10.918 35.7453 11.751 35.7453 12.829C35.7453 13.907 35.4373 14.747 34.8213 15.349C34.2193 15.951 33.4283 16.252 32.4483 16.252C31.4543 16.252 30.6493 15.951 30.0333 15.349C29.4173 14.747 29.1093 13.907 29.1093 12.829ZM32.4273 11.191C31.6293 11.191 31.2303 11.737 31.2303 12.829C31.2303 13.935 31.6293 14.488 32.4273 14.488C33.2113 14.488 33.6033 13.935 33.6033 12.829C33.6033 11.737 33.2113 11.191 32.4273 11.191Z" fill="#30D915"/>
+                                            </svg>
+                                            </h1>
+                                        <h1 class="font-semibold mt-1">Since last week</h1>
+                                   </div>
+                                </div>
+                               </div>
+                           
+                       </div>
+                       
+                </div>
+                <div class="col-span-2">
+                    <div class="card shadow-sm shadow-purple-500/100">
+<h1 class="#A601A2">Notice</h1>
+<hr/>
+<p class="text-[14px] ml-3">Dolor sit amet, consectetur adipiscing elit. Cras id dui eget nunc consequat volutpat. Vivamus quis sapien in enim accumsan commodo.</p>
+<hr/>
+<p class="text-[14px] ml-3">Dolor sit amet, consectetur adipiscing elit. Cras id dui eget nunc consequat volutpat. Vivamus quis sapien in enim accumsan commodo.</p>
+<hr/>
+<p class="text-[14px] ml-3">Dolor sit amet, consectetur adipiscing elit. Cras id dui eget nunc consequat volutpat. Vivamus quis sapien in enim accumsan commodo.</p>
+<hr/>
+<p class="text-[14px] ml-3">Dolor sit amet, consectetur adipiscing elit. Cras id dui eget nunc consequat volutpat. Vivamus quis sapien in enim accumsan commodo.</p>
+<hr/>
+                </div>
+            </div>
+            </div>
+
+        <button onClick="location.href='http://127.0.0.1:5500/Dashborad/dashboard.html'"  class="btn btn-primary">next</button>
+    </div>
+    
+   </div> 
+   
+</body>
+</html>
